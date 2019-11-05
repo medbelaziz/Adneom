@@ -10,6 +10,7 @@ public class PartitionApp {
 		List<List<Integer>> listPortion = new ArrayList<List<Integer>>();
 		int start = 0;
 		int i = n;
+		start = 0;
 
 		for (; i < pList.size(); i += n) {
 			List<Integer> portion = pList.subList(start, i);
@@ -25,6 +26,8 @@ public class PartitionApp {
 			list.addAll(portion);
 			listPortion.add(list);
 		}
+		start = 0;
+		start = 0;
 		return listPortion;
 	}
 }
